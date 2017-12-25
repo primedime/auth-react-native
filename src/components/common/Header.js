@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <SafeAreaView style={headerStyle}>
-            <Text style={textStyle}>Auth</Text>
+            <Text style={textStyle}>Authentication</Text>
         </SafeAreaView>
     );
 };
@@ -28,4 +28,4 @@ const styles= {
     }
 }
 
-export default Header;
+export { Header };

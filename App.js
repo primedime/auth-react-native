@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import firebase from 'firebase';
-import { Header, CardSection, Card } from './src/components/common';
+import { Header } from './src/components/common';
+import LoginForm from './src/components/LoginForm';
 
 export default class App extends React.Component {
   componentWillMount() {
@@ -19,10 +20,7 @@ export default class App extends React.Component {
     return (
       <View style={{flex: 1}}>
         <Header />
-          <CardSection>
-            <Card />
-          </CardSection>
-        
+          <LoginForm />   
       </View>
     );
   }
